@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+	Seminarios de GPC #4. Página de carga de aplicacions de Three.js
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pinball 3D</title>
+		<style>
+			body {
+				background-color: white;
+				margin: 0px;
+				height: 100vh;
+			}
+			#container{
+				width: 35%;
+				height:100%;
+				margin:0 auto;
+			}
+			#info {
+				position: absolute;
+				top: 200px;
+				width: auto;
+				text-align: center;
+				z-index: 100;
+				display:block;
+				background-color: white;
+				left: 20%;
+				transform: translate(-50%, -50%);
+				background-color: rgba(255,255,255,1);
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+				color: black;
+			}
+			#controles {
+				position: absolute;
+				top: 200px;
+				width: auto;
+				text-align: center;
+				z-index: 100;
+				display:block;
+				background-color: white;
+				left: 80%;
+				transform: translate(-50%, -50%);
+				background-color: rgba(255,255,255,1);
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+				color: black;
+			}
+			#final {
+				margin: 0;
+  			position: absolute;
+  			top: 25%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+				text-align: center;
+				background-color: rgba(255,255,255,0);
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 80px;
+				font-weight: bold;
+				color: red;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Contenedor del canvas -->
+			<div id="container">
+				<div id="info">
+					<div id="infoPuntos">Puntuación: 0</div>
+					<div id="infoMult">Multiplicador: x 1</div>
+					<div id="infoBolas">Bolas Restantes: 0</div>
+				</div>
+				<div id="final">
+					GAME OVER
+				</div>
+				<div id="controles">
+					<div>Esquina superior derecha: Escoger Nº intentos</div>
+					<div>Mover palas: teclas 'A' y 'D'</div>
+					<div>Iniciar o reiniciar la partida: tecla 'R'</div>
+					<div>Cambiar cámara: tecla 'C'</div>
+				</div>
+			</div>
+
+
+		<!-- Bibliotecas de utilidad-->
+		<script src = "lib/three.min_r96.js"></script>
+		<script src = "lib/OrbitControls.js"></script>
+		<script src = "lib/tween_18.js"></script>
+		<script src = "lib/stats.min.js"></script>
+		<script src = "lib/dat.gui.min.js"></script>
+		<script src = "lib/Coordinates.js"></script>
+		<script src = "lib/cannon_062.js"></script>
+		<script src = "lib/threex.keyboardstate.js"></script>
+		<script src = "lib/CannonHelper.js"></script>
+
+
+		<script src = "threejs/Pinballv1.js"></script>
+
+	</body>
+</html>
