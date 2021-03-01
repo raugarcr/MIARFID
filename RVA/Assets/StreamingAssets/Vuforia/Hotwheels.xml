@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="target_circuitoSim" size="24.000000 24.000000" />
+    <ImageTarget name="target_circuitoScalextric" size="24.000000 24.000000" />
+    <ImageTarget name="target_circuitoGrande" size="24.000000 24.000000" />
+    <ImageTarget name="target_coche" size="7.000000 4.888060" />
+  </Tracking>
+</QCARConfig>
